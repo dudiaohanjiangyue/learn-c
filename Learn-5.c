@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
-//¡¾5-9¡¿ »ªÊÏÎÂ¶È¡¢ÉãÊÏÎÂ¶ÈºÍ¿ªÊÏÎÂ¶ÈµÄ×ª»»
+//ã€5-9ã€‘ åæ°æ¸©åº¦ã€æ‘„æ°æ¸©åº¦å’Œå¼€æ°æ¸©åº¦çš„è½¬æ¢
 #include<stdio.h>
 void Temperatures(double h_temp);
 void Temperatures(double h_temp)
@@ -28,7 +28,7 @@ int main(void)
 	return 0;
 }
 
-//¡¾5-8¡¿ È¡Ä£ÔËËã
+//ã€5-8ã€‘ å–æ¨¡è¿ç®—
 #include<stdio.h>
 int main(void)
 {
@@ -51,7 +51,7 @@ int main(void)
 	return 0;
 }
 
-//¡¾5-7¡¿ ¼ÆËãÒ»¸öÊıµÄÁ¢·½
+//ã€5-7ã€‘ è®¡ç®—ä¸€ä¸ªæ•°çš„ç«‹æ–¹
 #include<stdio.h>
 double cub(double);
 int main(void)
@@ -70,7 +70,7 @@ double cub(double n)
 	return cub;
 }
 
-//¡¾5-6¡¿ ¼ÆËã´Ó1ÖÁÊäÈëÊı×ÖÆ½·½µÄºÍ
+//ã€5-6ã€‘ è®¡ç®—ä»1è‡³è¾“å…¥æ•°å­—å¹³æ–¹çš„å’Œ
 #include<stdio.h>
 
 int main(void)
@@ -89,7 +89,7 @@ int main(void)
 	return 0;
 }
 
-//¡¾5-5¡¿ ¼ÆËã´Ó1ÖÁÊäÈëÊı×ÖµÄÕûÊıºÍ
+//ã€5-5ã€‘ è®¡ç®—ä»1è‡³è¾“å…¥æ•°å­—çš„æ•´æ•°å’Œ
 #include<stdio.h>
 
 int main(void)
@@ -108,7 +108,7 @@ int main(void)
 	return 0;
 }
 
-//¡¾5-4¡¿ ½«ÓÃ»§ÒÔÀåÃ×Îªµ¥Î»µÄÉí¸ß×ª»¯ÎªÓ¢³ßºÍÓ¢´çÏÔÊ¾
+//ã€5-4ã€‘ å°†ç”¨æˆ·ä»¥å˜ç±³ä¸ºå•ä½çš„èº«é«˜è½¬åŒ–ä¸ºè‹±å°ºå’Œè‹±å¯¸æ˜¾ç¤º
 #include<stdio.h>
 #define m_to_i 0.39370
 #define m_to_f 0.03280
@@ -133,7 +133,7 @@ int main(void)
 	return 0;
 }
 
-//¡¾5-3¡¿ ½«ÌìÊı×ª»¯ÎªÖÜÊı¼ÓÌìÊı
+//ã€5-3ã€‘ å°†å¤©æ•°è½¬åŒ–ä¸ºå‘¨æ•°åŠ å¤©æ•°
 #include<stdio.h>
 #define d_to_w 7
 
@@ -157,7 +157,7 @@ int main(void)
 	return 0;
 }
 
-//¡¾5-2¡¿ ´òÓ¡´ÓÊäÈëÊı¿ªÊ¼µ½±È¸ÃÊı´óÓÚ10µÄËùÓĞÕûÊı
+//ã€5-2ã€‘ æ‰“å°ä»è¾“å…¥æ•°å¼€å§‹åˆ°æ¯”è¯¥æ•°å¤§äº10çš„æ‰€æœ‰æ•´æ•°
 #include<stdio.h>
 
 int main(void)
@@ -175,7 +175,7 @@ int main(void)
 	return 0;
 }
 
-//¡¾5-1¡¿ ½«·ÖÖÓ×ª»¯ÎªĞ¡Ê±ºÍ·ÖÖÓ
+//ã€5-1ã€‘ å°†åˆ†é’Ÿè½¬åŒ–ä¸ºå°æ—¶å’Œåˆ†é’Ÿ
 #include<stdio.h>
 #define m_to_h 60
 int main(void)
@@ -193,7 +193,7 @@ int main(void)
 		min = min % m_to_h;
 		printf(" %d hour, %dmin.\n", hour, min);
 		printf("Just enter the number of seconds or enter 0 to end the program:");
-		scanf("%d", &min);
+		scanfï¼ˆâ€œ%dâ€ï¼Œ &minï¼‰;
 	}
 	return 0;
 }
