@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
-//¡¾6-1¡¿¸ù¾İÓÃ»§ÊäÈëµÄÊı×ÖÇóºÍ
+//ã€6-1ã€‘æ ¹æ®ç”¨æˆ·è¾“å…¥çš„æ•°å­—æ±‚å’Œ
 #include<stdio.h>
 int main(void)
 {
@@ -18,7 +18,7 @@ int main(void)
 	return 0;
 }
 
-//¡¾6-2¡¿ ForÓï¾äÇ¶Ì×Ñ­»·
+//ã€6-2ã€‘ Forè¯­å¥åµŒå¥—å¾ªç¯
 #include<stdio.h>
 int main(void)
 {
@@ -38,7 +38,7 @@ int main(void)
 	return 0;
 }
 
-//¡¾6-3¡¿ÒÀÀµÍâ²¿Ñ­»·µÄForÓï¾äÇ¶Ì×Ñ­»·
+//ã€6-3ã€‘ä¾èµ–å¤–éƒ¨å¾ªç¯çš„Forè¯­å¥åµŒå¥—å¾ªç¯
 #include<stdio.h>
 int main(void)
 {
@@ -58,7 +58,7 @@ int main(void)
 	return 0;
 }
 
-//¡¾5-4¡¿Ê¹ÓÃForÑ­»·´¦ÀíÊı×é
+//ã€6-4ã€‘ä½¿ç”¨Forå¾ªç¯å¤„ç†æ•°ç»„
 #include<stdio.h>
 #define SIZE 10
 int main(void)
@@ -69,10 +69,10 @@ int main(void)
 	double sum = 0;
 	printf("Please enter %d numbers:\n", SIZE);
 	for (index = 0; index < SIZE; index++)
-		scanf("%lf", &num[index]);						//¶ÁÈ¡Êı×éÔªËØ
+		scanf("%lf", &num[index]);						//è¯»å–æ•°ç»„å…ƒç´ 
 	printf("The numbers read in are as follows:\n");
 	for (index = 0; index < SIZE; index++)
-		printf("%6.2lf", num[index]);					//ÑéÖ¤ÊäÈëµÄÊı×éÔªËØ
+		printf("%6.2lf", num[index]);					//éªŒè¯è¾“å…¥çš„æ•°ç»„å…ƒç´ 
 	printf("\n");
 	for (index = 0; index < SIZE; index++)
 		sum += num[index];
