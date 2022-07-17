@@ -80,3 +80,166 @@ int main(void)
 	printf("The numbers of average = %.2lf;\tsum = %.2lf\n", average, sum);
 	return 0;
 }
+
+//【6-5】计算数的整数幂
+#include<stdio.h>
+double power(double n, int p);
+int main(void)
+{
+	double x, xpow;
+	int exp;
+
+	printf("Enter a number and the positive integer power ");
+	printf("to which\nthe number will be raised.Enter q");
+	printf("to quit.\n");
+	while (scanf("%lf%d", &x, &exp) == 2)
+	{
+		xpow = power(x, exp);
+		printf("% .3g to the power %d is %.5g\n", x, exp, xpow);
+		printf("Enter next pair of numbers or q to quit.\n");
+	}
+	printf("Hope you enjoyed this power trip -- bye!\n");
+	return 0;
+}
+
+double power(double n, int p)
+{
+	double pow = 1;
+	int i;
+
+	for (i = 1; i <= p; i++)
+		pow *= n;
+	return pow;
+}
+
+//【6-6】用数组存储并打印26个字母
+#include<stdio.h>
+int main(void)
+{
+	int i, n;
+	char ch[26];
+	for (i = 0, n = 'a'; i < 26, n < 'a' + 26; i++)
+	{
+		ch[i] = n;
+		n++;
+	}
+	for (i = 0; i < 26; i++)
+		printf("%c", ch[i]);
+	return 0;
+}
+
+//【6-7】使用嵌套循环打印字符
+#include<stdio.h>
+int main(void)
+{
+	int i;
+	int n;
+	for (i = 1; i < 6; i++)
+	{
+		for (n = 0; n < i; n++)
+			printf("$");
+		printf("\n");
+	}
+	return 0;
+}
+
+//该程序打印格式如下：
+//$
+//$$
+//$$$
+//$$$$
+//$$$$$
+
+
+//【6-8】使用嵌套循环打印字母
+#include<stdio.h>
+int main(void)
+{
+	int i;
+	char ch;
+	for (i = 0; i < 6; i++)
+	{
+		for (ch = 'F'; ch >= ('F' - i); ch--)
+			printf("%c", ch);
+	printf("\n");
+	}
+	return 0;
+}
+
+//该程序打印格式如下：
+//F
+//FE
+//FED
+//FEDC
+//FEDCB
+//FEDCBA
+
+//【6-9】使用嵌套循环打印指定格式的字符
+方法一：
+ #include<stdio.h>
+int main(void)
+{
+	int i, n;
+	int sum = 0;
+	char ch;
+
+	for (i = 1; i <= 6; i++)
+	{
+		for (n = 0; n < i; n++)
+		{
+			for (ch = ('A' + sum); ch <= ('A' + sum); ch++)
+				printf("%c", ch);
+			sum++;
+		}
+	printf("\n");
+	}
+	return 0;
+}
+
+//方法二：
+#include<stdio.h>
+int main(void)
+{
+	int i, j;
+	char ch = 'A';
+
+	for (i = 1; i <= 6; i++)
+	{
+		for (j = 0; j < i; j++, ch++)
+			printf("%c", ch);
+	printf("\n");
+	}
+	return 0;
+}
+
+//该程序打印格式如下：
+//A
+//BC
+//DEF
+//GHIJ
+//KLMNO
+//PQRSTU
+
+//【6-10】使用嵌套循环打印指定格式的字符
+#include<stdio.h>
+int main(void)
+{
+	int i, j, num;
+	char c;
+	char ch = 'A';
+
+	printf("Please enter the core char you want to print(A...Z):");
+	scanf("%c", &c);
+	num = c - 'A' + 1;
+	for (i = 1; i <= num; i++)
+	{
+		for (j = 0; j < num - i; j++)
+			printf(" ");
+		for (ch = 'A'; j < num; j++)
+			printf("%c", ch++);
+		for (j = 1, ch -= 2; j < i; j++, ch--)
+			printf("%c", ch);
+		printf("\n");
+	}
+	return 0;
+}
